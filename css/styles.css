@@ -1,0 +1,184 @@
+/* Paleta de colores elegida
+https://coolors.co/palette/323a3e-65747c-eef0f1-3e3632-323e39
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  cursor: pointer;
+}
+.container-weather {
+  min-height: 100vh;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: 500ms;
+  opacity: 1;
+}
+h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+iframe {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 90%;
+}
+.container-weather::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+h2,
+h2,
+h3 {
+  color: #eef0f1;
+}
+
+#details {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+#container-form {
+  position: absolute;
+  width: 100%;
+  background: #323a3e94;
+  height: 86.8%;
+  margin-top: 38px;
+  padding: 30px;
+}
+
+p {
+  color: white;
+  margin-bottom: 0;
+}
+.form {
+  width: fit-content;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 50px 50px;
+}
+
+.btn-primary:hover {
+  background-color: #323e39;
+  color: #eef0f1;
+  transition: 0.2s ease-in-out;
+}
+input {
+  background-color: transparent;
+  color: #eef0f1;
+  border-radius: 5%;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+strong {
+  font-size: 1.2em;
+}
+
+.maxima {
+  font-size: 2em;
+}
+
+#principal {
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+#principal img {
+  float: left;
+}
+
+#principal h3 {
+  width: auto;
+  padding-top: 7px;
+}
+
+#icono {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+iframe {
+  opacity: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .container-weather {
+    min-height: 100vh;
+  }
+  h2 {
+    text-align: inherit;
+  }
+
+  #container-form {
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  #details {
+    font-size: 1.2em;
+    text-align: inherit;
+  }
+
+  p {
+    padding-top: 1em;
+  }
+
+  iframe {
+    margin-top: 0;
+    height: 60vh !important;
+    width: 80%;
+    display: inline-block;
+  }
+
+  #principal {
+    bottom: 0;
+    margin: 2% 5%;
+    width: 50%;
+    text-align: inherit;
+  }
+
+  .form {
+    width: fit-content;
+  }
+
+  #icono {
+    margin-top: -11.5%;
+    margin-left: 2%;
+  }
+
+  .p-2 {
+    padding: 0 !important;
+  }
+}
